@@ -24,17 +24,18 @@ public class Coche {
 
 	public String muestraCoche() {
 		String resultado = "";
+		String cocheMatricula = "El coche con matricula " + matricula + " ";
 		if (combustible == "Gasolina") {
-			resultado += "El coche con matricula " + matricula + " "; 
+			resultado += cocheMatricula; 
 			resultado += GastoCocheGasolina(modelo, fabricante);
 		} else if (combustible == "Diesel") {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += cocheMatricula;
 			resultado += GastoCocheDiesel(modelo, fabricante);
 		} else if (combustible == "Híbrido") {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += cocheMatricula;
 			resultado += GastoCocheHibrido(modelo, fabricante);
 		} else {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += cocheMatricula;
 			resultado += "no dispone de información";
 		}
 		return resultado;
