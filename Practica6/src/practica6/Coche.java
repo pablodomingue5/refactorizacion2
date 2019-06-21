@@ -6,7 +6,7 @@ public class Coche {
 	String modelo;
 	String fabricante;
 
-	public Coche() {
+	public Coche() { 
 		matricula = "";
 		atrib = "";
 		modelo = "";
