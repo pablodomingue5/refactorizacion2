@@ -7,7 +7,7 @@ package practica6;
  */
 public class Coche {
 	/**
-	 * Constante Double DIESEL
+	 * @param DIESEL
 	 * Contiene la constante del precio del Diesel por litro
 	 */
 	private static final Double DIESEL = 1.052;
@@ -15,7 +15,7 @@ public class Coche {
 	 * Constante Double GASOLINA
 	 * 	Contiene el precio de la Gasolina por litro.
 	 */
-	private static final Double GASOLINA = 1.052;
+	private static final Double GASOLINA = 1.337;
 	/**
 	 * String matricula
 	 * Atributo del objeto coche 
@@ -42,8 +42,8 @@ public class Coche {
 	String fabricante;
 
 	/**
-	 * Constructor por defecto Coche
-	 * Cuando no se le asigna ningún valor a los atributos que contiene.
+	 * @param Coche
+	 * Constructor por defecto, cuando no se le asigna ningún valor a los atributos que contiene.
 	 * Define los atributos del objeto coche anteriormente descritos.
 	 */
 	public Coche() { 
@@ -54,8 +54,8 @@ public class Coche {
 	}
 	/**
 	 * 
-	 * Constructor por parámetros Coche.
-	 * Sus parámetros dan valor a los atributos matricula, combustible, modelo, fabricante.
+	 * 
+	 * 
 	 * 
 	 * @param matricula
 	 * @param combustible
@@ -69,12 +69,7 @@ public class Coche {
 		this.modelo = modelo;
 		this.fabricante = fabricante;
 	} 
-	
-	/**
-	 * Método que muestra el atributo matrícula del objeto coche seguido del modelo, el fabricante y lo que gasta por litro.
-	 * Muestra uno o otro según el atributo combustible que sea
-	 * @return resultado
-	 */
+
 	public String muestraCoche() {
 		String resultado = "";
 		String cocheMatricula = "El coche con matricula " + matricula + " ";
@@ -90,42 +85,20 @@ public class Coche {
 		}
 		return resultado;
 	}
-	
-	/**
-	 * Método que devuelve la String gasto de combustible híbrido, recibiendo los parámetros modelo y fabricante.
-	 *
-	 * gastoDeCombustible devuelve =  "es un "+modelo+" "+fabricante+" y no necesita combustible.";
-	 * @param modelo
-	 * @param fabricante
-	 * @return
-	 */
+
 	private String GastoCocheHibrido(String modelo, String fabricante) {
 		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y no necesita combustible.";
 		return gastoDeCombustible;
 		
 		
 	}
-	/**
-	 * Método que devuelve la String gasto de combustible diesel, recibiendo los parámetros modelo y fabricante.
-	 *
-	 * gastoDeCombustible devuelve =  "es un "+modelo+" "+fabricante+" y no necesita combustible.";
-	 * @param modelo
-	 * @param fabricante
-	 * @return
-	 */
+
 	private String GastoCocheDiesel(String modelo, String fabricante) {
 		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta "+DIESEL+""+" euros por litro.";
 		return gastoDeCombustible;
 		
 	}
-	/**
-	 * Método que devuelve la String gasto de combustible gasolina, recibiendo los parámetros modelo y fabricante.
-	 *
-	 * gastoDeCombustible devuelve =  "es un "+modelo+" "+fabricante+" y no necesita combustible.";
-	 * @param modelo
-	 * @param fabricante
-	 * @return
-	 */
+
 	private String GastoCocheGasolina(String modelo, String fabricante) {
 		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta "+GASOLINA+""+" euros por litro.";
 		return gastoDeCombustible;
