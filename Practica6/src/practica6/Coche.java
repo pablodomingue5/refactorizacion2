@@ -42,20 +42,20 @@ public class Coche {
 	}
 
 	private String GastoCocheHibrido(String modelo, String fabricante) {
-		String gastoDeCombustible = "es un Hyundai Getz y no necesita combustible.";
+		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y no necesita combustible.";
 		return gastoDeCombustible;
 		
 		
 	}
 
 	private String GastoCocheDiesel(String modelo, String fabricante) {
-		String gastoDeCombustible = "es un Seat Ibiza y gasta 1,052 euros por litro.";
+		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta 1,052 euros por litro.";
 		return gastoDeCombustible;
 		
 	}
 
 	private String GastoCocheGasolina(String modelo, String fabricante) {
-		String gastoDeCombustible = "es un Opel Corsa y gasta 1,337 euros por litro.";
+		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta 1,337 euros por litro.";
 		return gastoDeCombustible;
 	}
 }
