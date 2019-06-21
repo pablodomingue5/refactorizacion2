@@ -2,6 +2,8 @@ package practica6;
 
 
 public class Coche {
+	private static final Double DIESEL = 1.052;
+	private static final Double GASOLINA = 1.052;
 	String matricula; 
 	String combustible;
 	String modelo;
@@ -26,14 +28,11 @@ public class Coche {
 		String resultado = "";
 		String cocheMatricula = "El coche con matricula " + matricula + " ";
 		if (combustible == "Gasolina") {
-			resultado += cocheMatricula; 
-			resultado += GastoCocheGasolina(modelo, fabricante);
+			resultado += cocheMatricula + GastoCocheGasolina(modelo, fabricante);
 		} else if (combustible == "Diesel") {
-			resultado += cocheMatricula;
-			resultado += GastoCocheDiesel(modelo, fabricante);
+			resultado +=cocheMatricula + GastoCocheDiesel(modelo, fabricante);
 		} else if (combustible == "Híbrido") {
-			resultado += cocheMatricula;
-			resultado += GastoCocheHibrido(modelo, fabricante);
+			resultado +=cocheMatricula + GastoCocheHibrido(modelo, fabricante);
 		} else {
 			resultado += cocheMatricula;
 			resultado += "no dispone de información";
@@ -49,13 +48,13 @@ public class Coche {
 	}
 
 	private String GastoCocheDiesel(String modelo, String fabricante) {
-		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta 1,052 euros por litro.";
+		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta "+DIESEL+""+" euros por litro.";
 		return gastoDeCombustible;
 		
 	}
 
 	private String GastoCocheGasolina(String modelo, String fabricante) {
-		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta 1,337 euros por litro.";
+		String gastoDeCombustible = "es un "+modelo+" "+fabricante+" y gasta "+GASOLINA+""+" euros por litro.";
 		return gastoDeCombustible;
 	}
 }
