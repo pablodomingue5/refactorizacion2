@@ -8,7 +8,7 @@ public class Coche {
 	String fabricante;
 
 	public Coche() { 
-		matricula = ""; //Podemos poner 
+		matricula = "";  
 		atrib = "";
 		modelo = "";
 		fabricante = "";

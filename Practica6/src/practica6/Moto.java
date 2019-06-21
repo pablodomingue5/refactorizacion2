@@ -9,7 +9,7 @@ public class Moto {
 		cilindrada = 0; 
 	}
 	
-	
+	 
 	public Moto(String m, int c) {//Cambiamos las variables del constructor por otras mas significativas
 		matricula = m;//Ponemos this. antes de las variables de la clase para que no de lugar a error.
 		cilindrada = c;
