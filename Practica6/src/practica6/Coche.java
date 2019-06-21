@@ -1,7 +1,12 @@
 package practica6;
 
-
+/**
+ * 
+ * @author PABLO
+ * @version v.2
+ */
 public class Coche {
+
 	private static final Double DIESEL = 1.052;
 	private static final Double GASOLINA = 1.052;
 	String matricula; 
