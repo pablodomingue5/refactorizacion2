@@ -6,8 +6,8 @@ public class Moto {
 	
 	
 	 
-	public Moto(String matricula, int cilindrada) {//Cambiamos las variables del constructor por otras mas significativas
-		this.matricula = matricula;//Ponemos this. antes de las variables de la clase para que no de lugar a error.
+	public Moto(String matricula, int cilindrada) {
+		this.matricula = matricula;
 		this.cilindrada = cilindrada;
 	}
 
@@ -19,11 +19,11 @@ public class Moto {
 		return cilindrada;
 	}
 
-	public void setMatricula(String matricula) {//Ponemos this. antes de la variable de la clase y cambiamos la string del set por una mas significativa
+	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
 
-	public void setCilindrada(int cilindrada) {//Ponemos this. antes de la variable de la clase y cambiamos el int del set por uno mas significativo
+	public void setCilindrada(int cilindrada) {
 		this.cilindrada = cilindrada;
 	}
 }
